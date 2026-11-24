@@ -1,26 +1,703 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="PLUS TUR personel taşımacılığı, öğrenci taşımacılığı ve VIP transfer hizmetleri.">
 <title>PLUS TUR | Ulaşım Hizmetleri</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-:root{--orange:#00C0E8;--dark:#22252a;--muted:#626872;--line:#e9e9e9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--dark);font-family:Montserrat,Arial,sans-serif}a{text-decoration:none;color:inherit}button{font:inherit}header{position:fixed;z-index:20;top:0;left:0;width:100%;background:rgba(255,255,255,.78);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.5)}.nav{max-width:1180px;margin:auto;min-height:78px;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{display:flex;align-items:center;gap:10px;font-size:28px;letter-spacing:-1.8px}.mark{display:grid;place-items:center;width:47px;height:47px;border-radius:50%;background:var(--orange);color:white;font-weight:800;font-size:19px;letter-spacing:-2px}.logo b{font-weight:800}.links{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:600}.links a:hover{color:var(--orange)}.cta{background:var(--orange);color:white!important;padding:13px 20px;border-radius:10px;display:inline-block;font-weight:700;font-size:13px}.menu{display:none;background:none;border:0;font-size:27px;cursor:pointer}.wrap{max-width:1180px;margin:auto;padding:0 24px}.hero{padding:164px 0 94px;background:radial-gradient(circle at 90% 20%,#fff0e3,transparent 45%),#fff}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:var(--orange)}h1{font-size:clamp(36px,5.2vw,68px);line-height:1.12;letter-spacing:-2.5px;max-width:840px;margin:20px 0}h1 span{color:var(--orange)}.lead{max-width:680px;font-size:17px;line-height:1.9;color:var(--muted);margin-bottom:30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.outline{border:1px solid #d7d7d7;border-radius:10px;padding:13px 20px;font-weight:700;font-size:13px}.hero-line{margin-top:70px;height:5px;width:100px;border-radius:10px;background:linear-gradient(90deg,#ffcf56,var(--orange))}section{padding:88px 0}.section-head{margin-bottom:36px}.section-head h2{font-size:clamp(28px,3.2vw,42px);letter-spacing:-1.3px;margin:12px 0}.section-head p{color:var(--muted);line-height:1.8}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.service{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s}.service:hover{transform:translateY(-5px);box-shadow:0 16px 40px #0000000c}.visual{height:185px;background:linear-gradient(135deg,#fff0db,#ffb568);display:grid;place-items:center;font-size:62px}.service:nth-child(2) .visual{background:linear-gradient(135deg,#eaf3ff,#ffd3a4)}.service:nth-child(3) .visual{background:linear-gradient(135deg,#f3e9e3,#bcbfc8)}.service-body{padding:27px}.service h3{margin:0 0 12px;font-size:19px}.service p{font-size:13px;color:var(--muted);line-height:1.85;min-height:92px}.service a{font-size:13px;color:var(--orange);font-weight:800}.why{background:#f8f9fb}.features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.feature{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px}.feature .ico{font-size:29px}.feature h3{font-size:15px;margin:18px 0 10px}.feature p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}.contact{background:#25282d;color:white}.contact p{color:#cdd0d5;line-height:1.8}.contact a:not(.cta){color:#fff;text-decoration:underline;text-underline-offset:4px}.contact-grid{display:grid;grid-template-columns:2fr 1fr;gap:40px;align-items:center}footer{background:#191b20;color:#aaa;padding:25px 0;font-size:12px}footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}footer a:hover{color:white}footer .legal{display:flex;gap:18px;flex-wrap:wrap}@media(max-width:800px){.nav{min-height:70px}.links{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;padding:24px;flex-direction:column;align-items:flex-start;box-shadow:0 12px 25px #0001}.links.open{display:flex}.menu{display:block}.cards{grid-template-columns:1fr}.features{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}.hero{padding-top:132px;padding-bottom:65px}section{padding:65px 0}.service p{min-height:0}}@media(max-width:480px){.features{grid-template-columns:1fr}.logo{font-size:24px}.mark{width:42px;height:42px}h1{letter-spacing:-1.5px}.lead{font-size:15px}}
+
+/* KURUMSAL RENKLER */
+
+:root {
+    --primary: #00C0E8;
+    --primary-hover: #009BBE;
+    --primary-text: #007C96;
+    --primary-light: #E6F9FD;
+    --primary-soft: #B3ECF8;
+    --dark: #22252A;
+    --muted: #626872;
+    --line: #E9E9E9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    background: #FFFFFF;
+    color: var(--dark);
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+}
+
+/* SABİT VE ŞEFFAF ÜST MENÜ */
+
+header {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,.78);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+.nav {
+    max-width: 1180px;
+    margin: auto;
+    min-height: 78px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+/* MENÜ BAĞLANTILARI */
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.links a {
+    transition: color .2s;
+}
+
+.links a:hover {
+    color: var(--primary-text);
+}
+
+/* BUTONLAR */
+
+.cta {
+    background: var(--primary);
+    color: var(--dark) !important;
+    padding: 13px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 13px;
+    transition: background .2s, transform .2s;
+}
+
+.cta:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.menu {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.wrap {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+/* ANA SAYFA KARŞILAMA ALANI */
+
+.hero {
+    padding: 164px 0 94px;
+    background: radial-gradient(
+        circle at 90% 20%,
+        var(--primary-light),
+        transparent 45%
+    ), #FFFFFF;
+}
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: var(--primary-text);
+}
+
+h1 {
+    font-size: clamp(36px,5.2vw,68px);
+    line-height: 1.12;
+    letter-spacing: -2.5px;
+    max-width: 840px;
+    margin: 20px 0;
+}
+
+h1 span {
+    color: var(--primary);
+}
+
+.lead {
+    max-width: 680px;
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.outline {
+    border: 1px solid #D7D7D7;
+    border-radius: 10px;
+    padding: 13px 20px;
+    font-weight: 700;
+    font-size: 13px;
+    transition: background .2s, border-color .2s;
+}
+
+.outline:hover {
+    background: var(--primary-light);
+    border-color: var(--primary);
+}
+
+.hero-line {
+    margin-top: 70px;
+    height: 5px;
+    width: 100px;
+    border-radius: 10px;
+    background: linear-gradient(
+        90deg,
+        var(--primary-soft),
+        var(--primary)
+    );
+}
+
+/* GENEL BÖLÜMLER */
+
+section {
+    padding: 88px 0;
+}
+
+.section-head {
+    margin-bottom: 36px;
+}
+
+.section-head h2 {
+    font-size: clamp(28px,3.2vw,42px);
+    letter-spacing: -1.3px;
+    margin: 12px 0;
+}
+
+.section-head p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/* HİZMET KARTLARI */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+}
+
+.service {
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    overflow: hidden;
+    background: #FFFFFF;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 40px #0000000C;
+}
+
+.visual {
+    height: 185px;
+    background: linear-gradient(
+        135deg,
+        #E6F9FD,
+        #80DFF2
+    );
+    display: grid;
+    place-items: center;
+    font-size: 62px;
+}
+
+.service:nth-child(2) .visual {
+    background: linear-gradient(
+        135deg,
+        #F0FBFF,
+        #B3ECF8
+    );
+}
+
+.service:nth-child(3) .visual {
+    background: linear-gradient(
+        135deg,
+        #E8F5F8,
+        #A9C5CF
+    );
+}
+
+.service-body {
+    padding: 27px;
+}
+
+.service h3 {
+    margin: 0 0 12px;
+    font-size: 19px;
+}
+
+.service p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.85;
+    min-height: 92px;
+}
+
+.service a {
+    font-size: 13px;
+    color: var(--primary-text);
+    font-weight: 800;
+}
+
+/* NEDEN PLUS TUR */
+
+.why {
+    background: #F5FAFC;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+}
+
+.feature {
+    background: #FFFFFF;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 25px;
+    transition: border-color .2s, transform .2s;
+}
+
+.feature:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.feature .ico {
+    font-size: 29px;
+    color: var(--primary);
+}
+
+.feature h3 {
+    font-size: 15px;
+    margin: 18px 0 10px;
+}
+
+.feature p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--muted);
+    margin: 0;
+}
+
+/* İLETİŞİM BÖLÜMÜ */
+
+.contact {
+    background: #25282D;
+    color: white;
+}
+
+.contact .eyebrow {
+    color: var(--primary);
+}
+
+.contact p {
+    color: #CDD0D5;
+    line-height: 1.8;
+}
+
+.contact a:not(.cta) {
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+/* ALT BİLGİ */
+
+footer {
+    background: #191B20;
+    color: #AAAAAA;
+    padding: 25px 0;
+    font-size: 12px;
+}
+
+footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+footer a:hover {
+    color: var(--primary);
+}
+
+footer .legal {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* TABLET VE MOBİL UYUMLULUK */
+
+@media(max-width:800px) {
+
+    .nav {
+        min-height: 70px;
+    }
+
+    .logo img {
+        width: 210px;
+    }
+
+    .links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: #FFFFFF;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: 0 12px 25px #0001;
+    }
+
+    .links.open {
+        display: flex;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 132px;
+        padding-bottom: 65px;
+    }
+
+    section {
+        padding: 65px 0;
+    }
+
+    .service p {
+        min-height: 0;
+    }
+}
+
+@media(max-width:480px) {
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    h1 {
+        letter-spacing: -1.5px;
+    }
+
+    .lead {
+        font-size: 15px;
+    }
+}
+
 </style>
 </head>
+
 <body>
-<header><div class="nav"><a class="logo" href="#anasayfa" aria-label="PLUS TUR ana sayfa"><img src="logo.svg" alt="PLUS TUR" style="width:250px;height:auto;display:block;"></a><button class="menu" aria-label="Menüyü aç" aria-expanded="false" onclick="toggleMenu(this)">☰</button><nav class="links" id="menu"><a href="#anasayfa">Ana Sayfa</a><a href="#hizmetler">Hizmetlerimiz</a><a href="#neden">Neden PLUS TUR?</a><a href="#iletisim">İletişim</a><a class="cta" href="mailto:info@plustur.com?subject=PLUS%20TUR%20Teklif%20Talebi">Teklif Al →</a></nav></div></header>
+
+<!-- ÜST MENÜ -->
+
+<header>
+    <div class="nav">
+
+        <a class="logo" href="#anasayfa" aria-label="PLUS TUR ana sayfa">
+            <img src="logo.svg" alt="PLUS TUR">
+        </a>
+
+        <button class="menu" aria-label="Menüyü aç" aria-expanded="false" onclick="toggleMenu(this)">☰</button>
+
+        <nav class="links" id="menu">
+            <a href="#anasayfa">Ana Sayfa</a>
+            <a href="#hizmetler">Hizmetlerimiz</a>
+            <a href="#neden">Neden PLUS TUR?</a>
+            <a href="#iletisim">İletişim</a>
+            <a class="cta" href="mailto:info@plustur.com?subject=PLUS%20TUR%20Teklif%20Talebi">Teklif Al →</a>
+        </nav>
+
+    </div>
+</header>
+
 <main>
-<section class="hero" id="anasayfa"><div class="wrap"><div class="eyebrow">PLUS TUR · ULAŞIM HİZMETLERİ</div><h1>Ulaşımda güven.<br><span>Her yolculukta kalite.</span></h1><p class="lead">İşletmenize ve ihtiyaçlarınıza özel personel taşımacılığı, öğrenci taşımacılığı ve VIP transfer çözümleri. Planlı, koordineli ve profesyonel ulaşım hizmetleri.</p><div class="actions"><a class="cta" href="#hizmetler">Hizmetlerimizi Keşfedin →</a><a class="outline" href="#iletisim">Bize Ulaşın</a></div><div class="hero-line"></div></div></section>
-<section id="hizmetler"><div class="wrap"><div class="section-head"><div class="eyebrow">HİZMETLERİMİZ</div><h2>Her ihtiyaca uygun ulaşım</h2><p>Kurumsal ve bireysel ulaşım ihtiyaçlarınız için çözümlerimizi keşfedin.</p></div><div class="cards">
-<article class="service"><div class="visual" aria-hidden="true">🏢</div><div class="service-body"><h3>Personel Taşımacılığı</h3><p>Vardiya düzeninize ve personel yoğunluğunuza uygun güzergâh planlaması, koordineli araç yönetimi ve operasyon takibi.</p><a href="mailto:info@plustur.com?subject=Personel%20Ta%C5%9F%C4%B1mac%C4%B1l%C4%B1%C4%9F%C4%B1%20Teklif%20Talebi">Teklif Al →</a></div></article>
-<article class="service"><div class="visual" aria-hidden="true">🎒</div><div class="service-body"><h3>Öğrenci Taşımacılığı</h3><p>Öğrenciler için güvenliği, düzeni ve zamanında ulaşımı esas alan okul servis organizasyonları.</p><a href="mailto:info@plustur.com?subject=%C3%96%C4%9Frenci%20Ta%C5%9F%C4%B1mac%C4%B1l%C4%B1%C4%9F%C4%B1%20Teklif%20Talebi">Teklif Al →</a></div></article>
-<article class="service"><div class="visual" aria-hidden="true">✦</div><div class="service-body"><h3>Özel Etkinlik & VIP Transfer</h3><p>Özel günler, kurumsal organizasyonlar ve havalimanı transferleri için konfor odaklı ulaşım planlaması.</p><a href="mailto:info@plustur.com?subject=VIP%20Transfer%20Teklif%20Talebi">Teklif Al →</a></div></article>
-</div></div></section>
-<section class="why" id="neden"><div class="wrap"><div class="section-head"><div class="eyebrow">BİZİ TANIYIN</div><h2>Neden <span style="color:var(--orange)">PLUS TUR?</span></h2><p>Ulaşım süreçlerinde profesyonel yönetim, güvenilir hizmet ve operasyonel disiplin.</p></div><div class="features"><div class="feature"><div class="ico">🛡️</div><h3>Güvenli Ulaşım</h3><p>Mevzuat ve güvenlik standartlarına uygun hizmet yaklaşımı.</p></div><div class="feature"><div class="ico">🗺️</div><h3>Güzergâh Planlama</h3><p>İhtiyaçlarınıza özel, düzenli ulaşım organizasyonu.</p></div><div class="feature"><div class="ico">◷</div><h3>Operasyon Takibi</h3><p>Planlı ve koordineli hizmet yönetimi.</p></div><div class="feature"><div class="ico">☏</div><h3>Müşteri Desteği</h3><p>İletişim ve operasyon süreçlerinde çözüm odaklı yaklaşım.</p></div></div></div></section>
-<section class="contact" id="iletisim"><div class="wrap contact-grid"><div><div class="eyebrow">İLETİŞİM</div><h2>Ulaşım ihtiyacınızı birlikte planlayalım.</h2><p>Personel, öğrenci veya VIP transfer talepleriniz için bizimle iletişime geçin.</p><a class="cta" href="mailto:info@plustur.com?subject=PLUS%20TUR%20Teklif%20Talebi">E-posta ile Teklif Al →</a></div><div><p><strong>E-posta</strong><br><a href="mailto:info@plustur.com">info@plustur.com</a></p><p><strong>Telefon</strong><br><a href="tel:+905300150482">0530 015 04 82</a></p><p><strong>Konum</strong><br>Beylikdüzü / İstanbul</p></div></div></section>
-</main><footer><div class="wrap"><span>© 2026 PLUS TUR. Tüm hakları saklıdır.</span><div class="legal"><span>KVKK Aydınlatma Metni</span><span>Gizlilik Politikası</span><span>Çerez Politikası</span><span>Site Kullanım Koşulları</span></div></div></footer>
-<script>function toggleMenu(b){const m=document.getElementById('menu');const open=m.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.textContent=open?'✕':'☰'}document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('menu').classList.remove('open');const b=document.querySelector('.menu');b.setAttribute('aria-expanded','false');b.textContent='☰'}));</script>
-</body></html>
+
+<!-- ANA SAYFA -->
+
+<section class="hero" id="anasayfa">
+    <div class="wrap">
+
+        <div class="eyebrow">
+            PLUS TUR · ULAŞIM HİZMETLERİ
+        </div>
+
+        <h1>
+            Ulaşımda güven.<br>
+            <span>Her yolculukta kalite.</span>
+        </h1>
+
+        <p class="lead">
+            İşletmenize ve ihtiyaçlarınıza özel personel taşımacılığı,
+            öğrenci taşımacılığı ve VIP transfer çözümleri.
+            Planlı, koordineli ve profesyonel ulaşım hizmetleri.
+        </p>
+
+        <div class="actions">
+            <a class="cta" href="#hizmetler">Hizmetlerimizi Keşfedin →</a>
+            <a class="outline" href="#iletisim">Bize Ulaşın</a>
+        </div>
+
+        <div class="hero-line"></div>
+
+    </div>
+</section>
+
+<!-- HİZMETLERİMİZ -->
+
+<section id="hizmetler">
+    <div class="wrap">
+
+        <div class="section-head">
+            <div class="eyebrow">HİZMETLERİMİZ</div>
+            <h2>Her ihtiyaca uygun ulaşım</h2>
+            <p>Kurumsal ve bireysel ulaşım ihtiyaçlarınız için çözümlerimizi keşfedin.</p>
+        </div>
+
+        <div class="cards">
+
+            <!-- PERSONEL TAŞIMACILIĞI -->
+
+            <article class="service">
+                <div class="visual" aria-hidden="true">🏢</div>
+                <div class="service-body">
+                    <h3>Personel Taşımacılığı</h3>
+                    <p>Vardiya düzeninize ve personel yoğunluğunuza uygun güzergâh planlaması, koordineli araç yönetimi ve operasyon takibi.</p>
+                    <a href="mailto:info@plustur.com?subject=Personel%20Ta%C5%9F%C4%B1mac%C4%B1l%C4%B1%C4%9F%C4%B1%20Teklif%20Talebi">Teklif Al →</a>
+                </div>
+            </article>
+
+            <!-- ÖĞRENCİ TAŞIMACILIĞI -->
+
+            <article class="service">
+                <div class="visual" aria-hidden="true">🎒</div>
+                <div class="service-body">
+                    <h3>Öğrenci Taşımacılığı</h3>
+                    <p>Öğrenciler için güvenliği, düzeni ve zamanında ulaşımı esas alan okul servis organizasyonları.</p>
+                    <a href="mailto:info@plustur.com?subject=%C3%96%C4%9Frenci%20Ta%C5%9F%C4%B1mac%C4%B1l%C4%B1%C4%9F%C4%B1%20Teklif%20Talebi">Teklif Al →</a>
+                </div>
+            </article>
+
+            <!-- VIP TRANSFER -->
+
+            <article class="service">
+                <div class="visual" aria-hidden="true">✦</div>
+                <div class="service-body">
+                    <h3>Özel Etkinlik &amp; VIP Transfer</h3>
+                    <p>Özel günler, kurumsal organizasyonlar ve havalimanı transferleri için konfor odaklı ulaşım planlaması.</p>
+                    <a href="mailto:info@plustur.com?subject=VIP%20Transfer%20Teklif%20Talebi">Teklif Al →</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- NEDEN PLUS TUR -->
+
+<section class="why" id="neden">
+    <div class="wrap">
+
+        <div class="section-head">
+            <div class="eyebrow">BİZİ TANIYIN</div>
+            <h2>Neden <span style="color:var(--primary)">PLUS TUR?</span></h2>
+            <p>Ulaşım süreçlerinde profesyonel yönetim, güvenilir hizmet ve operasyonel disiplin.</p>
+        </div>
+
+        <div class="features">
+
+            <div class="feature">
+                <div class="ico">🛡️</div>
+                <h3>Güvenli Ulaşım</h3>
+                <p>Mevzuat ve güvenlik standartlarına uygun hizmet yaklaşımı.</p>
+            </div>
+
+            <div class="feature">
+                <div class="ico">🗺️</div>
+                <h3>Güzergâh Planlama</h3>
+                <p>İhtiyaçlarınıza özel, düzenli ulaşım organizasyonu.</p>
+            </div>
+
+            <div class="feature">
+                <div class="ico">◷</div>
+                <h3>Operasyon Takibi</h3>
+                <p>Planlı ve koordineli hizmet yönetimi.</p>
+            </div>
+
+            <div class="feature">
+                <div class="ico">☏</div>
+                <h3>Müşteri Desteği</h3>
+                <p>İletişim ve operasyon süreçlerinde çözüm odaklı yaklaşım.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- İLETİŞİM -->
+
+<section class="contact" id="iletisim">
+    <div class="wrap contact-grid">
+
+        <div>
+            <div class="eyebrow">İLETİŞİM</div>
+            <h2>Ulaşım ihtiyacınızı birlikte planlayalım.</h2>
+            <p>Personel, öğrenci veya VIP transfer talepleriniz için bizimle iletişime geçin.</p>
+            <a class="cta" href="mailto:info@plustur.com?subject=PLUS%20TUR%20Teklif%20Talebi">E-posta ile Teklif Al →</a>
+        </div>
+
+        <div>
+            <p>
+                <strong>E-posta</strong><br>
+                <a href="mailto:info@plustur.com">info@plustur.com</a>
+            </p>
+
+            <p>
+                <strong>Telefon</strong><br>
+                <a href="tel:+905300150482">0530 015 04 82</a>
+            </p>
+
+            <p>
+                <strong>Konum</strong><br>
+                Beylikdüzü / İstanbul
+            </p>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- ALT BİLGİ -->
+
+<footer>
+    <div class="wrap">
+
+        <span>© 2026 PLUS TUR. Tüm hakları saklıdır.</span>
+
+        <div class="legal">
+            <span>KVKK Aydınlatma Metni</span>
+            <span>Gizlilik Politikası</span>
+            <span>Çerez Politikası</span>
+            <span>Site Kullanım Koşulları</span>
+        </div>
+
+    </div>
+</footer>
+
+<!-- MOBİL MENÜ -->
+
+<script>
+
+function toggleMenu(b) {
+    const m = document.getElementById('menu');
+    const open = m.classList.toggle('open');
+    b.setAttribute('aria-expanded', String(open));
+    b.textContent = open ? '✕' : '☰';
+}
+
+document.querySelectorAll('#menu a').forEach(a => {
+    a.addEventListener('click', () => {
+        document.getElementById('menu').classList.remove('open');
+        const b = document.querySelector('.menu');
+        b.setAttribute('aria-expanded', 'false');
+        b.textContent = '☰';
+    });
+});
+
+</script>
+
+</body>
+</html>
