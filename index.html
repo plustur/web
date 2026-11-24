@@ -232,12 +232,13 @@ section {
 }
 
 /* HİZMETLERİMİZ */
-#hizmetler { background:#F5F8FA; }
+#hizmetler { background:#FFFFFF; }
 .services-list { display:flex; flex-direction:column; gap:86px; }
 .service-detail { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr); gap:clamp(44px,8vw,110px); align-items:center; }
 .service-detail.reverse .service-main { order:2; }
 .service-detail.reverse .service-offer { order:1; }
-.service-icon { width:68px; height:68px; display:grid; place-items:center; margin-bottom:28px; border-radius:19px; background:var(--primary); color:#fff; font-size:30px; box-shadow:0 10px 22px rgba(0,192,232,.23); }
+.service-icon { width:68px; height:68px; display:grid; place-items:center; margin-bottom:28px; border-radius:19px; background:var(--primary); color:#fff; box-shadow:0 10px 22px rgba(0,192,232,.23); }
+.service-icon svg { width:32px; height:32px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
 .service-main h3 { margin:0 0 18px; font-size:clamp(28px,3.2vw,42px); line-height:1.18; letter-spacing:-1.3px; }
 .service-main > p { max-width:650px; margin:0 0 28px; color:var(--muted); font-size:16px; line-height:1.9; }
 .service-points { display:grid; gap:14px; margin:0; padding:0; list-style:none; }
@@ -509,19 +510,19 @@ footer .legal {
 
         <div class="services-list">
             <article class="service-detail">
-                <div class="service-main"><div class="service-icon" aria-hidden="true">♧</div><h3>Personel Taşımacılığı</h3><p>Çalışanlarınızı işe güvenli, zamanında ve konforlu bir şekilde ulaştırıyoruz. Vardiya düzeninize uygun, planlı ve profesyonel servis çözümleri sunuyoruz.</p><ul class="service-points"><li>Sabit güzergâh ve servis saatleri</li><li>Deneyimli ve eğitimli şoförler</li><li>Vardiyaya göre esnek planlama</li></ul></div>
+                <div class="service-main"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><h3>Personel Taşımacılığı</h3><p>Çalışanlarınızı işe güvenli, zamanında ve konforlu bir şekilde ulaştırıyoruz. Vardiya düzeninize uygun, planlı ve profesyonel servis çözümleri sunuyoruz.</p><ul class="service-points"><li>Sabit güzergâh ve servis saatleri</li><li>Deneyimli ve eğitimli şoförler</li><li>Vardiyaya göre esnek planlama</li></ul></div>
                 <aside class="service-offer"><h4>Kurumunuz için servis planı</h4><p>Çalışan sayınıza ve güzergâhlarınıza göre size özel bir teklif hazırlayalım.</p><a class="cta" href="mailto:info@plustur.com?subject=Personel%20Ta%C5%9F%C4%B1mac%C4%B1l%C4%B1%C4%9F%C4%B1%20Teklif%20Talebi">Teklif isteyin</a></aside>
             </article>
             <article class="service-detail reverse">
-                <div class="service-main"><div class="service-icon" aria-hidden="true">♢</div><h3>Öğrenci Taşımacılığı</h3><p>Öğrencilerinizin okula ve evlerine güvenli ulaşımını önceliğimiz olarak görüyoruz. Düzenli, kontrollü ve özenli okul servisi hizmeti sunuyoruz.</p><ul class="service-points"><li>Okul servislerinde düzenli sefer</li><li>Güvenli ve kontrollü araç filosu</li><li>Veli bilgilendirme ve takip</li></ul></div>
+                <div class="service-main"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h3>Öğrenci Taşımacılığı</h3><p>Öğrencilerinizin okula ve evlerine güvenli ulaşımını önceliğimiz olarak görüyoruz. Düzenli, kontrollü ve özenli okul servisi hizmeti sunuyoruz.</p><ul class="service-points"><li>Okul servislerinde düzenli sefer</li><li>Güvenli ve kontrollü araç filosu</li><li>Veli bilgilendirme ve takip</li></ul></div>
                 <aside class="service-offer"><h4>Okulunuz için servis hizmeti</h4><p>Okulunuzun ve öğrenci sayınızın ihtiyacına göre güzergâh ve servis planı oluşturalım.</p><a class="cta" href="mailto:info@plustur.com?subject=%C3%96%C4%9Frenci%20Ta%C5%9F%C4%B1mac%C4%B1l%C4%B1%C4%9F%C4%B1%20Teklif%20Talebi">Bilgi alın</a></aside>
             </article>
             <article class="service-detail">
-                <div class="service-main"><div class="service-icon" aria-hidden="true">✦</div><h3>Özel Etkinlikler</h3><p>Düğün, toplantı, tören, lansman ve kurumsal organizasyonlarınız için araç ve güzergâh planlamasını baştan sona üstleniyoruz.</p><ul class="service-points"><li>Çoklu araç ve konvoy organizasyonu</li><li>Etkinlik saatine göre planlama</li><li>Karşılama ve yönlendirme desteği</li></ul></div>
+                <div class="service-main"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.8 11.3 2 22l10.7-3.8"/><path d="M4 3h.01M22 8h.01M15 2h.01M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></svg></div><h3>Özel Etkinlikler</h3><p>Düğün, toplantı, tören, lansman ve kurumsal organizasyonlarınız için araç ve güzergâh planlamasını baştan sona üstleniyoruz.</p><ul class="service-points"><li>Çoklu araç ve konvoy organizasyonu</li><li>Etkinlik saatine göre planlama</li><li>Karşılama ve yönlendirme desteği</li></ul></div>
                 <aside class="service-offer"><h4>Etkinliğiniz için araç planı</h4><p>Tarih, katılımcı sayısı ve güzergâh bilgilerinizi paylaşın, size uygun teklifi hazırlayalım.</p><a class="cta" href="mailto:info@plustur.com?subject=%C3%96zel%20Etkinlikler%20Teklif%20Talebi">Etkinlik için teklif</a></aside>
             </article>
             <article class="service-detail reverse">
-                <div class="service-main"><div class="service-icon" aria-hidden="true">♛</div><h3>VIP Transfer</h3><p>Havalimanı, otel, iş merkezi ve özel adresler arasında size özel, konforlu ve güvenilir bir transfer deneyimi sunuyoruz.</p><ul class="service-points"><li>Premium araç seçenekleri</li><li>Karşılama ve uçuş takibi</li><li>Profesyonel ve gizliliğe önem veren şoförler</li></ul></div>
+                <div class="service-main"><div class="service-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg></div><h3>VIP Transfer</h3><p>Havalimanı, otel, iş merkezi ve özel adresler arasında size özel, konforlu ve güvenilir bir transfer deneyimi sunuyoruz.</p><ul class="service-points"><li>Premium araç seçenekleri</li><li>Karşılama ve uçuş takibi</li><li>Profesyonel ve gizliliğe önem veren şoförler</li></ul></div>
                 <aside class="service-offer"><h4>Size özel transfer</h4><p>Güzergâhınızı ve tarihinizi bize bildirin, transferinizi önceden planlayalım.</p><a class="cta" href="mailto:info@plustur.com?subject=VIP%20Transfer%20Teklif%20Talebi">Rezervasyon yapın</a></aside>
             </article>
         </div>
